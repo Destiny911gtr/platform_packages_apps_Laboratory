@@ -47,6 +47,12 @@
         android:title="@string/carrier_label"
         android:icon="@drawable/ic_carrier_label" />
 
+   <PreferenceScreen
+        android:key="clock_options"
+        android:fragment="com.aos.laboratory.cat.ClockOptions"
+        android:title="@string/status_bar_clock"
+        android:icon="@drawable/ic_clock" />
+
     <PreferenceScreen
         android:key="statusbar_general"
         android:fragment="com.aos.laboratory.cat.StatusbarGeneral"
