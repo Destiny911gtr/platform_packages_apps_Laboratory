@@ -60,8 +60,6 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements Prefer
         mThreshold.setValue(value);
         mThreshold.setOnPreferenceChangeListener(this);
         mThreshold.setEnabled(isNetMonitorEnabled);
-
-        getActivity().getActionBar().setTitle(R.string.network_traffic_title);
     }
 
     @Override

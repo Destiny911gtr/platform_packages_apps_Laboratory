@@ -50,7 +50,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quick_settings);
 
-        getActivity().getActionBar().setTitle(R.string.quick_settings_category);
 
          final ContentResolver resolver = getActivity().getContentResolver();
          final PreferenceScreen prefSet = getPreferenceScreen();

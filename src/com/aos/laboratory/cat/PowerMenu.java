@@ -54,8 +54,6 @@ public class PowerMenu extends SettingsPreferenceFragment implements Preference.
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.powermenu);
 
-        getActivity().getActionBar().setTitle(R.string.power_menu_settings);
-
         mPowerMenuLockscreen = (SwitchPreference) findPreference(KEY_POWERMENU_LOCKSCREEN);
         mPowerMenuLockscreen.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.POWERMENU_LOCKSCREEN, 1) == 1));
