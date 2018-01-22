@@ -1,0 +1,11 @@
+<!-- drawable/lock.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?android:attr/colorControlNormal">
+  <path
+    android:fillColor="#000"
+    android:pathData="M3,6v12l3,3h12l3,-3v-12l-3,-3h-12l-3,3zM19.385,4.404l-6.589,8.575l-1.763,-0.011l-6.726,-8.273l1.6,-1.687l12.157,-0.008l1.322,1.404zM8,-6zM19.292,4.369l-6.039,4.587l-2.636,0.029l-6.27,-4.298l1.653,-1.687l12.04,-0.053l1.252,1.421zM6,21q-3,0 -3,-3l3,3zM21,18q0,3 -3,3l3,-3zM21,6q0,-3 -3,-3l3,3zM6,3q-3,0 -3,3l3,-3zM10.526,8.979q1.491,1.069 2.841,-0.01l-2.841,0.01zM12.774,12.99q-0.792,1.067 -1.715,0.015l1.715,-0.015z" />
+</vector>
