@@ -41,6 +41,17 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values" />
 
+    <!-- Device Part -->
+    <Preference
+        android:key="device_part"
+        android:icon="@drawable/ic_device"
+        android:title="@string/device_part_title"
+        android:summary="@string/device_part_summary">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
+           android:targetPackage="com.oneplus.shit"
+           android:targetClass ="com.oneplus.shit.settings.ShitPanelSettings" />
+    </Preference>
+
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >

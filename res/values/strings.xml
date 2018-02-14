@@ -533,5 +533,8 @@
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
 
+    <!-- Device Part -->
+    <string name="device_part_title">Device Features</string>
+    <string name="device_part_summary">Oneplus Stuff</string>
 </resources>
 
