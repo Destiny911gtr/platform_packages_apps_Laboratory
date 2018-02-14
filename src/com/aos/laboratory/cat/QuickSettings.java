@@ -37,9 +37,6 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class QuickSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
-    private static final String QUICK_PULLDOWN = "quick_pulldown";
-
-    private ListPreference mQuickPulldown;
     private CustomSeekBarPreference mQsRowsPort;
     private CustomSeekBarPreference mQsRowsLand;
     private CustomSeekBarPreference mQsColumnsPort;
@@ -53,13 +50,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
 
          final ContentResolver resolver = getActivity().getContentResolver();
          final PreferenceScreen prefSet = getPreferenceScreen();
-
-        mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-        int quickPulldownValue = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
-        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
-        updatePulldownSummary(quickPulldownValue);
 
         int value = Settings.System.getIntForUser(resolver,
                 Settings.System.QS_ROWS_PORTRAIT, 3, UserHandle.USER_CURRENT);
@@ -90,13 +80,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mQuickPulldown) {
-            int quickPulldownValue = Integer.valueOf((String) newValue);
-            Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
-                    quickPulldownValue, UserHandle.USER_CURRENT);
-            updatePulldownSummary(quickPulldownValue);
-            return true;
-        } else if (preference == mQsRowsPort) {
+        if (preference == mQsRowsPort) {
             int val = (Integer) newValue;
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_ROWS_PORTRAIT, val, UserHandle.USER_CURRENT);
@@ -123,21 +107,5 @@ public class QuickSettings extends SettingsPreferenceFragment implements Prefere
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.LABORATORY;
-    }
-
-    private void updatePulldownSummary(int value) {
-        Resources res = getResources();
-        if (value == 0) {
-            // Quick Pulldown deactivated
-            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
-        } else if (value == 3) {
-            // Quick Pulldown always
-            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary_always));
-        } else {
-            String direction = res.getString(value == 2
-                    ? R.string.quick_pulldown_left
-                    : R.string.quick_pulldown_right);
-            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
-       }
     }
 }

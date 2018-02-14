@@ -20,12 +20,10 @@
     android:title="@string/quick_settings_category">
 
 
-    <ListPreference
-        android:key="quick_pulldown"
-        android:title="@string/quick_pulldown_title"
-        android:entries="@array/quick_pulldown_entries"
-        android:entryValues="@array/quick_pulldown_values"
-        android:persistent="false" />
+    <com.aos.laboratory.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_quick_qs_pulldown"
+        android:title="@string/status_bar_quick_qs_pulldown"
+        android:defaultValue="true" />
 
     <com.aos.laboratory.preferences.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
