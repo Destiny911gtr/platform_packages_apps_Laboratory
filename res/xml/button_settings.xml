@@ -185,6 +185,10 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="volume_key"
+        android:title="@string/hardware_keys_volume_keys_title" >
+
     <com.aos.laboratory.preferences.SystemSettingSwitchPreference
         android:key="volume_keys_control_media_stream"
         android:title="@string/volume_keys_control_media_stream_title"
@@ -216,5 +220,7 @@
         android:title="@string/volume_answer_call_title"
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
