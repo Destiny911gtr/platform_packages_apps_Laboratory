@@ -532,9 +532,22 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_seconds_title">Show seconds</string>
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 
     <!-- Device Part -->
     <string name="device_part_title">Device Features</string>
     <string name="device_part_summary">Oneplus Stuff</string>
+
+    <!-- Weather - OmniJaws Settings -->
+    <string name="weather_title">Weather</string>
+    <string name="weather_config_title">Service settings</string>
+    <string name="weather_config_summary"></string>
+    <string name="header_weather_title">Header view weather</string>
+    <string name="header_weather_summary">Enable notification panel header weather display</string>
+    <string name="weather_icon_pack_title">Condition icon pack</string>
+    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+
+>>>>>>> 0b9cede... Laboratory: Add OmniJaws config
 </resources>
 

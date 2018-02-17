@@ -34,6 +34,13 @@
     android:icon="@drawable/ic_recents"
     android:title="@string/recents_category" />
 
+   <!-- Weather -->
+   <Preference
+     android:key="weather"
+     android:fragment="com.aos.laboratory.cat.Weather"
+     android:icon="@drawable/ic_weather"
+     android:title="@string/weather_title" />
+
     <PreferenceCategory
         android:key="notifications_category"
         android:title="@string/notifications_category">
