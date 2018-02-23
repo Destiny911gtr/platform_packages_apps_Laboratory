@@ -53,6 +53,12 @@
         android:title="@string/status_bar_clock"
         android:icon="@drawable/ic_clock" />
 
+   <PreferenceScreen
+        android:key="battery_options"
+        android:fragment="com.aos.laboratory.cat.BatteryOptions"
+        android:title="@string/status_bar_battery"
+        android:icon="@drawable/ic_battery" />
+
     <PreferenceScreen
         android:key="statusbar_general"
         android:fragment="com.aos.laboratory.cat.StatusbarGeneral"

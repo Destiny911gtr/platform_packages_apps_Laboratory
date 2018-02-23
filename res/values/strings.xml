@@ -45,6 +45,7 @@
     <string name="carrier_label">Carrier Label</string>
     <string name="notifications_category">Notifications Settings</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_battery">Battery</string>
 
     <!-- General -->
     <string name="ok">Okay</string>
