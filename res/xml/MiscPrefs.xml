@@ -59,19 +59,16 @@
         <com.aos.laboratory.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
-            android:icon="@drawable/ic_vibrate_call_connect"
             android:defaultValue="false" />
 
         <com.aos.laboratory.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
-            android:icon="@drawable/ic_vibrate_call_wait"
             android:defaultValue="false" />
 
         <com.aos.laboratory.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
-            android:icon="@drawable/ic_vibrate_call_disconnect"
             android:defaultValue="false" />
 
     </PreferenceCategory>
